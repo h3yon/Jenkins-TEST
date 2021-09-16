@@ -1,6 +1,5 @@
 #!/bin/sh
 ssh ubuntu@3.34.124.94 <<EOF
-    sudo n lts
     cd ~/jenkins-test
     git pull origin master
     pm2 startOrRestart ecosystem.config.js
